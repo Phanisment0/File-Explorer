@@ -1,3 +1,5 @@
+*.ts
+
 # Logs
 logs
 *.log
