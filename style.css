@@ -34,11 +34,11 @@ body {
 	background: none;
 	border: none;
 	color: #aaa;
-	font-size: 18px;
+	font-size: 25px;
 	padding: 4px 8px;
 	cursor: pointer;
 	user-select: none;
-	-webkit-user-select: none; /* Android / Chrome */
+	-webkit-user-select: none;
 	-ms-user-select: none;
 }
 
@@ -55,7 +55,7 @@ body {
 	font-size: 14px;
 	line-height: 1.2;
 	user-select: none;
-	-webkit-user-select: none; /* Android / Chrome */
+	-webkit-user-select: none;
 	-ms-user-select: none;
 }
 
@@ -63,7 +63,7 @@ body {
 	font-size: 11px;
 	color: #aaa;
 	user-select: none;
-	-webkit-user-select: none; /* Android / Chrome */
+	-webkit-user-select: none;
 	-ms-user-select: none;
 }
 
