@@ -1,14 +1,44 @@
+html {
+	scrollbar-width: none;
+}
+
 body {
 	font-family: Arial, sans-serif;
-	background: #222;
+	background: #222222;
 	color: white;
 	margin: 0;
 	padding: 0;
 }
 
 .header {
+	display: flex;
+	align-items: center;
 	border-bottom: 1px solid #3a3a3a;
 	margin-bottom: 6px;
+	padding: 6px;
+}
+
+.header-actions {
+	margin-left: auto;
+	display: flex;
+	gap: 6px;
+}
+
+.header button {
+	background: #2b2b2b;
+	color: white;
+	border: 1px solid #3a3a3a;
+	border-radius: 4px;
+	padding: 4px 8px;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.header button:hover {
+	background: #3a3a3a;
+	color: #4fc3f7;
 }
 
 .header h3 {
@@ -33,7 +63,7 @@ body {
 .edit-btn {
 	background: none;
 	border: none;
-	color: #aaa;
+	color: #aaaaaa;
 	font-size: 25px;
 	padding: 4px 8px;
 	cursor: pointer;
@@ -59,9 +89,13 @@ body {
 	-ms-user-select: none;
 }
 
+.item-name:hover {
+	text-decoration: underline;
+}
+
 .item-size {
 	font-size: 11px;
-	color: #aaa;
+	color: #aaaaaa;
 	user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
@@ -74,4 +108,37 @@ body {
 
 .item:hover .item-size {
 	color: #9adfff;
+}
+
+.icon{
+	filter: invert(100%);
+}
+
+
+#breadcrumb {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #ccc;
+}
+
+#breadcrumb .item {
+	cursor: pointer;
+}
+
+#breadcrumb .item:hover {
+	text-decoration: underline;
+}
+
+#breadcrumb .separator {
+	display: flex;
+	align-items: center;
+	margin: 0 -2px;
+}
+
+#breadcrumb .separator img {
+	width: 12px;
+	height: 12px;
+	opacity: 0.6;
+	filter: invert(100%);
 }
